@@ -33,4 +33,16 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="126dp" />
 
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick= "Reset"
+        android:text="Reset"
+
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="506dp"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
