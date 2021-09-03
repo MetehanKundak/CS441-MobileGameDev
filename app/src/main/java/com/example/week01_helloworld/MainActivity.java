@@ -1,3 +1,8 @@
+//CS441 GameDevForMobile
+//Metehan Kundak
+//mkundak1@binghamton.edu
+
+
 package com.example.week01_helloworld;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,8 +15,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView hello_text;
     Button  click_button;
-    Button reset_button;
-    int counter = 0;
+    Button reset_button;// Back to the initial state
+    int counter = 0; //counter to check the number of clicks
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
