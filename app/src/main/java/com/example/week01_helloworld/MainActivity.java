@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         else if (counter % 2 == 0){
-            hello_text.setText("Hello Human");
+            hello_text.setText("Hello Human you have clicked Hello world for "+counter+" times");
             click_button.setText("Click");
 
         }
@@ -47,9 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void Reset(View view) {
 
-        hello_text.setText("Reset the text");
-        click_button.setText("Back to the initial state");
         counter=0;
+        hello_text.setText("Reset the text");
+        click_button.setText("Back to the initial state click again to say Hello");
+
 
     }
 

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    android:background = "@drawable/image" >
 
 
     <TextView
@@ -13,6 +15,7 @@
         android:layout_width="209dp"
         android:layout_height="211dp"
         android:text="Hello World!"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.693"
@@ -25,23 +28,25 @@
         android:id="@+id/button"
         android:layout_width="162dp"
         android:layout_height="94dp"
-        android:layout_marginStart="112dp"
+        android:layout_marginStart="124dp"
 
         android:onClick="Clicked"
         android:text="Click"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="126dp" />
+        tools:layout_editor_absoluteY="60dp" />
 
     <Button
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick= "Reset"
-        android:text="Reset"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="68dp"
 
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="506dp"
+        android:onClick="Reset"
+        android:text="Reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_world_text"
         tools:ignore="MissingConstraints" />
 
 
